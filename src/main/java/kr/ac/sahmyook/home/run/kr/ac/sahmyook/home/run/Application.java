@@ -17,9 +17,9 @@ public class Application {
         m.subWhileMenu();
         m.subDoWhileMenu();
         m.subBreakMenu();
-    m.subContinueMenu();
-    m.subStaticMethodMenu();
-m.subNonStaticMethodMenu();
+        m.subContinueMenu();
+        m.subStaticMethodMenu();
+        m.subNonStaticMethodMenu();
     }
 
 }

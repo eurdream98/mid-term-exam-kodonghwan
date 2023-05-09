@@ -308,7 +308,7 @@ public class Menu {
                     ws.countCharacter();
                     break;
                 case 5:
-                    ws.countInChar();
+                    ws.countInChar("apple", 'a');
                     break;
                 case 6:
                     System.out.println("메인 메뉴로 돌아갑니다.");
@@ -374,46 +374,46 @@ public class Menu {
                     System.out.println("메인 메뉴로 돌아갑니다.");
                     return;
                 default:
-                    sys=1;
+                    sys = 1;
 
             }
-        } while (sys==1);
+        } while (sys == 1);
 
     }
 
     public void subContinueMenu() {
-    Scanner sc = new Scanner(System.in);
-    int sys = 1;
-    ContinueSample cs = new ContinueSample();
-    do{
-        System.out.println("*** continue문 테스트 부메뉴 ***\n" +
-                "1. 1~100까지의 정수 중 3의 배수를 뺀 정수들의 합계 출력하기\n" +
-                "2. 3행 5열의 행열값 출력하되, 1행 3열부터 1행 5열까지 생략하고 출력하기\n" +
-                "3. 이전 메뉴로 가기\n" +
-                "메뉴 선택 :\n");
-        int no=sc.nextInt();
-        switch (no){
-            case 1:
-                cs.sumJumpThree();
-                break;
-            case 2:
-                cs.rowColJump();
-                break;
-            case 3:
-                System.out.println("메인 메뉴로 돌아갑니다.");
-                return;
-            default:
-                sys=1;
+        Scanner sc = new Scanner(System.in);
+        int sys = 1;
+        ContinueSample cs = new ContinueSample();
+        do {
+            System.out.println("*** continue문 테스트 부메뉴 ***\n" +
+                    "1. 1~100까지의 정수 중 3의 배수를 뺀 정수들의 합계 출력하기\n" +
+                    "2. 3행 5열의 행열값 출력하되, 1행 3열부터 1행 5열까지 생략하고 출력하기\n" +
+                    "3. 이전 메뉴로 가기\n" +
+                    "메뉴 선택 :\n");
+            int no = sc.nextInt();
+            switch (no) {
+                case 1:
+                    cs.sumJumpThree();
+                    break;
+                case 2:
+                    cs.rowColJump();
+                    break;
+                case 3:
+                    System.out.println("메인 메뉴로 돌아갑니다.");
+                    return;
+                default:
+                    sys = 1;
 
-        }
-    }while(sys==1);
+            }
+        } while (sys == 1);
     }
 
     public void subStaticMethodMenu() {
         Scanner sc = new Scanner(System.in);
         int sys = 1;
         StaticMethodSample sms = new StaticMethodSample();
-        do{
+        do {
             System.out.println("*** static 메소드 사용 테스트 부메뉴 ***\n" +
                     "1. Math 클래스의 랜덤값 구하는 메소드 : 1~45사이의 임의의 정수 출력\n" +
                     "2. Math 클래스의 실수값에 대한 절대값 구하는 메소드 : -12.77 절대값 출력하기\n" +
@@ -421,23 +421,23 @@ public class Menu {
                     "4. 이전 메뉴로 가기\n" +
                     "메뉴 선택 : \n");
             int no = sc.nextInt();
-            switch (no){
+            switch (no) {
                 case 1:
                     sms.testMathRandom();
                     break;
                 case 2:
                     sms.testMathAbs();
                     break;
-                    case 3:
+                case 3:
                     sms.testMathMax();
                     break;
                 case 4:
                     System.out.println("메인 메뉴로 돌아갑니다.");
                     return;
                 default:
-                    sys=1;
+                    sys = 1;
             }
-        }while(sys==1);
+        } while (sys == 1);
 
     }
 
@@ -445,28 +445,29 @@ public class Menu {
         Scanner sc = new Scanner(System.in);
         int sys = 1;
         NonStaticMethodSample nsms = new NonStaticMethodSample();
-   do{
-       System.out.println("*** non-static 메소드 사용 테스트 부메뉴 ***\n" +
-               "1. Scanner 클래스 사용 : 자료형 종류별로 값 입력받아 출력하기\n" +
-               "2. Random 클래스 사용 : 정수와 실수에 대한 난수 출력하기\n" +
-               "3. 이전 메뉴로 가기\n" +
-               "메뉴 선택 :\n");
-       int no = sc.nextInt();
-       switch(no){
-           case 1: nsms.testScanner();
-           break;
-           case 2:
-               nsms.testRandom();
-               break;
-           case 3:
-               System.out.println("메인 메뉴로 돌아갑니다.");
-               return;
-           default:
-               sys=1;
+        do {
+            System.out.println("*** non-static 메소드 사용 테스트 부메뉴 ***\n" +
+                    "1. Scanner 클래스 사용 : 자료형 종류별로 값 입력받아 출력하기\n" +
+                    "2. Random 클래스 사용 : 정수와 실수에 대한 난수 출력하기\n" +
+                    "3. 이전 메뉴로 가기\n" +
+                    "메뉴 선택 :\n");
+            int no = sc.nextInt();
+            switch (no) {
+                case 1:
+                    nsms.testScanner();
+                    break;
+                case 2:
+                    nsms.testRandom();
+                    break;
+                case 3:
+                    System.out.println("메인 메뉴로 돌아갑니다.");
+                    return;
+                default:
+                    sys = 1;
 
 
-       }
-   }while(sys==1);
+            }
+        } while (sys == 1);
     }
 
 
