@@ -14,6 +14,7 @@ public class DowhileSample {
             if (i < str.length() - 1) {
                 System.out.print("-");
             }
+
         }
     }
 
